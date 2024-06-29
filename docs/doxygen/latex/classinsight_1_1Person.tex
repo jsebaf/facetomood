@@ -1,0 +1,255 @@
+\hypertarget{classinsight_1_1Person}{}\section{insight\+:\+:Person Class Reference}
+\label{classinsight_1_1Person}\index{insight\+::\+Person@{insight\+::\+Person}}
+
+
+{\ttfamily \#include $<$person.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const cv\+::\+Rect \& \hyperlink{classinsight_1_1Person_a57d7a32a780bdd2cb961bbb9fdc2db6a}{get\+Face\+Rect} () const 
+\begin{DoxyCompactList}\small\item\em Rectangle containing person face. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_ad182c6fbd2b608c77b100182e02cf30e}{set\+Face\+Rect} (const cv\+::\+Rect \&face\+Rect)
+\item 
+const std\+::vector$<$ cv\+::\+Point $>$ \& \hyperlink{classinsight_1_1Person_a9ead9b7768710e250dcb04d9d12e7401}{get\+Tracking\+Points} () const 
+\begin{DoxyCompactList}\small\item\em Tracking points on frame reference. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_a9c668ee6eb33db866cf8bcd755b14767}{set\+Tracking\+Points} (const std\+::vector$<$ cv\+::\+Point $>$ \&tracking\+Points)
+\item 
+const std\+::vector$<$ cv\+::\+Point $>$ \& \hyperlink{classinsight_1_1Person_ac11e159bd50afbb5683693a91bf3b96b}{get\+Tracking\+Deformation\+Points} () const 
+\begin{DoxyCompactList}\small\item\em Tracking points on scaled person reference. \end{DoxyCompactList}\item 
+const std\+::vector$<$ bool $>$ \& \hyperlink{classinsight_1_1Person_acc699b992cfd2bd744dba52208156f49}{get\+Point\+Visibility} () const 
+\item 
+void \hyperlink{classinsight_1_1Person_aa4408d90ce0a5bc406451fb2c306d1d7}{set\+Point\+Visibility} (const std\+::vector$<$ bool $>$ \&point\+Visibility)
+\begin{DoxyCompactList}\small\item\em Point visibility array. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_a60bd56f1f861761a7a86a626c9e4a364}{set\+Tracking\+Deformation\+Points} (const std\+::vector$<$ cv\+::\+Point $>$ \&tracking\+Deformation\+Points)
+\item 
+const cv\+::\+Point \& \hyperlink{classinsight_1_1Person_a3b246b9f6955527213ccd3b3a065f96e}{get\+Deformation\+Center} () const 
+\begin{DoxyCompactList}\small\item\em Center point of scaled person reference. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_aaa0bad1f6bc9a00e1e9012e81cb47d64}{set\+Deformation\+Center} (const cv\+::\+Point \&deformation\+Center)
+\item 
+const std\+::vector$<$ double $>$ \& \hyperlink{classinsight_1_1Person_af738a5fe0420c6c3a940c6771d0ca979}{get\+Detected\+Action\+Units} () const 
+\begin{DoxyCompactList}\small\item\em Vector of detected Action Unit probabilities. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_aaf7cd6f10728b0d128ab06a62fa11a73}{set\+Detected\+Action\+Units} (const std\+::vector$<$ double $>$ \&action\+Unit\+Codes)
+\item 
+const std\+::vector$<$ double $>$ \& \hyperlink{classinsight_1_1Person_a4d2e633cc52fe2ec5f8773b225a540aa}{get\+Detected\+Moods} () const 
+\begin{DoxyCompactList}\small\item\em Vector of detected mood probabilities. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_ae68353bc3925e6441b9af659b35e082a}{set\+Detected\+Moods} (std\+::vector$<$ double $>$ \&detected\+Moods)
+\item 
+const Pose \hyperlink{classinsight_1_1Person_ab66592f86fcbe53273275756d6d3d388}{get\+Pose} () const 
+\begin{DoxyCompactList}\small\item\em Vector of pose angles. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Person_aea53fda2ba4039dbf8d1c1f4c44e6440}{set\+Pose} (Pose \&pose)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: Some general documentation for class \hyperlink{classinsight_1_1Person}{Person} ... 
+
+\subsection{Member Function Documentation}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Deformation\+Center@{get\+Deformation\+Center}}
+\index{get\+Deformation\+Center@{get\+Deformation\+Center}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Deformation\+Center() const }{getDeformationCenter() const }}]{\setlength{\rightskip}{0pt plus 5cm}const cv\+::\+Point\& insight\+::\+Person\+::get\+Deformation\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a3b246b9f6955527213ccd3b3a065f96e}{}\label{classinsight_1_1Person_a3b246b9f6955527213ccd3b3a065f96e}
+
+
+Center point of scaled person reference. 
+
+\begin{DoxyReturn}{Returns}
+deformation center point. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Detected\+Action\+Units@{get\+Detected\+Action\+Units}}
+\index{get\+Detected\+Action\+Units@{get\+Detected\+Action\+Units}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Detected\+Action\+Units() const }{getDetectedActionUnits() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$double$>$\& insight\+::\+Person\+::get\+Detected\+Action\+Units (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_af738a5fe0420c6c3a940c6771d0ca979}{}\label{classinsight_1_1Person_af738a5fe0420c6c3a940c6771d0ca979}
+
+
+Vector of detected Action Unit probabilities. 
+
+\begin{DoxyReturn}{Returns}
+vector of detected Action Unit probabilities. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Detected\+Moods@{get\+Detected\+Moods}}
+\index{get\+Detected\+Moods@{get\+Detected\+Moods}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Detected\+Moods() const }{getDetectedMoods() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$double$>$\& insight\+::\+Person\+::get\+Detected\+Moods (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a4d2e633cc52fe2ec5f8773b225a540aa}{}\label{classinsight_1_1Person_a4d2e633cc52fe2ec5f8773b225a540aa}
+
+
+Vector of detected mood probabilities. 
+
+\begin{DoxyReturn}{Returns}
+vector of detected mood probabilities. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Face\+Rect@{get\+Face\+Rect}}
+\index{get\+Face\+Rect@{get\+Face\+Rect}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Face\+Rect() const }{getFaceRect() const }}]{\setlength{\rightskip}{0pt plus 5cm}const cv\+::\+Rect\& insight\+::\+Person\+::get\+Face\+Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a57d7a32a780bdd2cb961bbb9fdc2db6a}{}\label{classinsight_1_1Person_a57d7a32a780bdd2cb961bbb9fdc2db6a}
+
+
+Rectangle containing person face. 
+
+\begin{DoxyReturn}{Returns}
+face rectangle. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Point\+Visibility@{get\+Point\+Visibility}}
+\index{get\+Point\+Visibility@{get\+Point\+Visibility}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Point\+Visibility() const }{getPointVisibility() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$bool$>$\& insight\+::\+Person\+::get\+Point\+Visibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_acc699b992cfd2bd744dba52208156f49}{}\label{classinsight_1_1Person_acc699b992cfd2bd744dba52208156f49}
+\begin{DoxyReturn}{Returns}
+point visibility array. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Pose@{get\+Pose}}
+\index{get\+Pose@{get\+Pose}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Pose() const }{getPose() const }}]{\setlength{\rightskip}{0pt plus 5cm}const Pose insight\+::\+Person\+::get\+Pose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_ab66592f86fcbe53273275756d6d3d388}{}\label{classinsight_1_1Person_ab66592f86fcbe53273275756d6d3d388}
+
+
+Vector of pose angles. 
+
+\begin{DoxyReturn}{Returns}
+pose angles. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Tracking\+Deformation\+Points@{get\+Tracking\+Deformation\+Points}}
+\index{get\+Tracking\+Deformation\+Points@{get\+Tracking\+Deformation\+Points}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Tracking\+Deformation\+Points() const }{getTrackingDeformationPoints() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$cv\+::\+Point$>$\& insight\+::\+Person\+::get\+Tracking\+Deformation\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_ac11e159bd50afbb5683693a91bf3b96b}{}\label{classinsight_1_1Person_ac11e159bd50afbb5683693a91bf3b96b}
+
+
+Tracking points on scaled person reference. 
+
+\begin{DoxyReturn}{Returns}
+tracking points. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!get\+Tracking\+Points@{get\+Tracking\+Points}}
+\index{get\+Tracking\+Points@{get\+Tracking\+Points}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{get\+Tracking\+Points() const }{getTrackingPoints() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$cv\+::\+Point$>$\& insight\+::\+Person\+::get\+Tracking\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a9ead9b7768710e250dcb04d9d12e7401}{}\label{classinsight_1_1Person_a9ead9b7768710e250dcb04d9d12e7401}
+
+
+Tracking points on frame reference. 
+
+\begin{DoxyReturn}{Returns}
+tracking points. 
+\end{DoxyReturn}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Deformation\+Center@{set\+Deformation\+Center}}
+\index{set\+Deformation\+Center@{set\+Deformation\+Center}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Deformation\+Center(const cv\+::\+Point \&deformation\+Center)}{setDeformationCenter(const cv::Point &deformationCenter)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Deformation\+Center (
+\begin{DoxyParamCaption}
+\item[{const cv\+::\+Point \&}]{deformation\+Center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_aaa0bad1f6bc9a00e1e9012e81cb47d64}{}\label{classinsight_1_1Person_aaa0bad1f6bc9a00e1e9012e81cb47d64}
+
+\begin{DoxyParams}{Parameters}
+{\em deformation\+Center} & center point to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Detected\+Action\+Units@{set\+Detected\+Action\+Units}}
+\index{set\+Detected\+Action\+Units@{set\+Detected\+Action\+Units}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Detected\+Action\+Units(const std\+::vector$<$ double $>$ \&action\+Unit\+Codes)}{setDetectedActionUnits(const std::vector< double > &actionUnitCodes)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Detected\+Action\+Units (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ double $>$ \&}]{action\+Unit\+Codes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_aaf7cd6f10728b0d128ab06a62fa11a73}{}\label{classinsight_1_1Person_aaf7cd6f10728b0d128ab06a62fa11a73}
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Unit\+Codes} & vector of detected Action Units to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Detected\+Moods@{set\+Detected\+Moods}}
+\index{set\+Detected\+Moods@{set\+Detected\+Moods}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Detected\+Moods(std\+::vector$<$ double $>$ \&detected\+Moods)}{setDetectedMoods(std::vector< double > &detectedMoods)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Detected\+Moods (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$ \&}]{detected\+Moods}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_ae68353bc3925e6441b9af659b35e082a}{}\label{classinsight_1_1Person_ae68353bc3925e6441b9af659b35e082a}
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & of detected mood probabilities to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Face\+Rect@{set\+Face\+Rect}}
+\index{set\+Face\+Rect@{set\+Face\+Rect}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Face\+Rect(const cv\+::\+Rect \&face\+Rect)}{setFaceRect(const cv::Rect &faceRect)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Face\+Rect (
+\begin{DoxyParamCaption}
+\item[{const cv\+::\+Rect \&}]{face\+Rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_ad182c6fbd2b608c77b100182e02cf30e}{}\label{classinsight_1_1Person_ad182c6fbd2b608c77b100182e02cf30e}
+
+\begin{DoxyParams}{Parameters}
+{\em face\+Rect} & face rectangle to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Point\+Visibility@{set\+Point\+Visibility}}
+\index{set\+Point\+Visibility@{set\+Point\+Visibility}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Point\+Visibility(const std\+::vector$<$ bool $>$ \&point\+Visibility)}{setPointVisibility(const std::vector< bool > &pointVisibility)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Point\+Visibility (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ bool $>$ \&}]{point\+Visibility}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_aa4408d90ce0a5bc406451fb2c306d1d7}{}\label{classinsight_1_1Person_aa4408d90ce0a5bc406451fb2c306d1d7}
+
+
+Point visibility array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & visibility array to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Pose@{set\+Pose}}
+\index{set\+Pose@{set\+Pose}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Pose(\+Pose \&pose)}{setPose(Pose &pose)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Pose (
+\begin{DoxyParamCaption}
+\item[{Pose \&}]{pose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_aea53fda2ba4039dbf8d1c1f4c44e6440}{}\label{classinsight_1_1Person_aea53fda2ba4039dbf8d1c1f4c44e6440}
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & of pose angles to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Tracking\+Deformation\+Points@{set\+Tracking\+Deformation\+Points}}
+\index{set\+Tracking\+Deformation\+Points@{set\+Tracking\+Deformation\+Points}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Tracking\+Deformation\+Points(const std\+::vector$<$ cv\+::\+Point $>$ \&tracking\+Deformation\+Points)}{setTrackingDeformationPoints(const std::vector< cv::Point > &trackingDeformationPoints)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Tracking\+Deformation\+Points (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ cv\+::\+Point $>$ \&}]{tracking\+Deformation\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a60bd56f1f861761a7a86a626c9e4a364}{}\label{classinsight_1_1Person_a60bd56f1f861761a7a86a626c9e4a364}
+
+\begin{DoxyParams}{Parameters}
+{\em tracking\+Deformation\+Points} & tracking points to set. \\
+\hline
+\end{DoxyParams}
+\index{insight\+::\+Person@{insight\+::\+Person}!set\+Tracking\+Points@{set\+Tracking\+Points}}
+\index{set\+Tracking\+Points@{set\+Tracking\+Points}!insight\+::\+Person@{insight\+::\+Person}}
+\subsubsection[{\texorpdfstring{set\+Tracking\+Points(const std\+::vector$<$ cv\+::\+Point $>$ \&tracking\+Points)}{setTrackingPoints(const std::vector< cv::Point > &trackingPoints)}}]{\setlength{\rightskip}{0pt plus 5cm}void insight\+::\+Person\+::set\+Tracking\+Points (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ cv\+::\+Point $>$ \&}]{tracking\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classinsight_1_1Person_a9c668ee6eb33db866cf8bcd755b14767}{}\label{classinsight_1_1Person_a9c668ee6eb33db866cf8bcd755b14767}
+
+\begin{DoxyParams}{Parameters}
+{\em tracking\+Points} & tracking points to set. \\
+\hline
+\end{DoxyParams}

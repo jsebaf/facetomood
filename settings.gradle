@@ -1,0 +1,4 @@
+include ':facetomood'
+include ':opencv'
+include ':app'
+rootProject.name = "Facetomood"

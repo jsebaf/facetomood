@@ -1,0 +1,139 @@
+\hypertarget{classinsight_1_1DistanceFaceFeature}{}\section{insight\+:\+:Distance\+Face\+Feature Class Reference}
+\label{classinsight_1_1DistanceFaceFeature}\index{insight\+::\+Distance\+Face\+Feature@{insight\+::\+Distance\+Face\+Feature}}
+
+
+{\ttfamily \#include $<$distance-\/face-\/feature.\+h$>$}
+
+
+
+Inherits insight\+::\+Face\+Feature.
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Mode} \{ {\bfseries E\+X\+P\+A\+ND}, 
+{\bfseries C\+O\+M\+P\+R\+E\+SS}, 
+{\bfseries P\+O\+S\+I\+T\+I\+VE}, 
+{\bfseries N\+E\+G\+A\+T\+I\+VE}
+ \}\hypertarget{classinsight_1_1DistanceFaceFeature_a765368d2dbf5841b54099e60fba73e57}{}\label{classinsight_1_1DistanceFaceFeature_a765368d2dbf5841b54099e60fba73e57}
+
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries P\+O\+I\+N\+T\+\_\+\+T\+O\+\_\+\+P\+O\+I\+NT}, 
+{\bfseries P\+O\+I\+N\+T\+\_\+\+T\+O\+\_\+\+S\+E\+G\+M\+E\+NT}, 
+{\bfseries S\+E\+G\+M\+E\+N\+T\+\_\+\+T\+O\+\_\+\+S\+E\+G\+M\+E\+NT}, 
+{\bfseries X\+\_\+\+D\+I\+S\+T\+A\+N\+CE}, 
+\\*
+{\bfseries Y\+\_\+\+D\+I\+S\+T\+A\+N\+CE}
+ \}\hypertarget{classinsight_1_1DistanceFaceFeature_a0afb7a1457ea3fc7c30e99fa549abf01}{}\label{classinsight_1_1DistanceFaceFeature_a0afb7a1457ea3fc7c30e99fa549abf01}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Distance\+Face\+Feature} (short point1, short point2, Type type, double threshold, Mode mode)\hypertarget{classinsight_1_1DistanceFaceFeature_a30ccc9050e0d8def0f26de4c8c0952c3}{}\label{classinsight_1_1DistanceFaceFeature_a30ccc9050e0d8def0f26de4c8c0952c3}
+
+\item 
+{\bfseries Distance\+Face\+Feature} (short point1, std\+::vector$<$ short $>$ segment1, double threshold, Mode mode)\hypertarget{classinsight_1_1DistanceFaceFeature_a32432031d9dfd599719e0c7152997f84}{}\label{classinsight_1_1DistanceFaceFeature_a32432031d9dfd599719e0c7152997f84}
+
+\item 
+{\bfseries Distance\+Face\+Feature} (std\+::vector$<$ short $>$ segment1, std\+::vector$<$ short $>$ segment2, double threshold, Mode mode)\hypertarget{classinsight_1_1DistanceFaceFeature_ac059fe0dc8d44d6f2a3ca1ca0586d6eb}{}\label{classinsight_1_1DistanceFaceFeature_ac059fe0dc8d44d6f2a3ca1ca0586d6eb}
+
+\item 
+void {\bfseries init} ()\hypertarget{classinsight_1_1DistanceFaceFeature_a5d4a406c254505e4f9bb1f1d8d47067f}{}\label{classinsight_1_1DistanceFaceFeature_a5d4a406c254505e4f9bb1f1d8d47067f}
+
+\item 
+void {\bfseries add\+Value} (cv\+::\+Point point1, cv\+::\+Point point2)\hypertarget{classinsight_1_1DistanceFaceFeature_aeb07d0b8f7336ce312aea243b16df019}{}\label{classinsight_1_1DistanceFaceFeature_aeb07d0b8f7336ce312aea243b16df019}
+
+\item 
+void {\bfseries add\+Value} (cv\+::\+Point point1, std\+::vector$<$ cv\+::\+Point $>$ segment1)\hypertarget{classinsight_1_1DistanceFaceFeature_a50e95d92ca510cc987e1679ec4d55c78}{}\label{classinsight_1_1DistanceFaceFeature_a50e95d92ca510cc987e1679ec4d55c78}
+
+\item 
+void {\bfseries add\+Value} (std\+::vector$<$ cv\+::\+Point $>$ segment1, std\+::vector$<$ cv\+::\+Point $>$ segment2)\hypertarget{classinsight_1_1DistanceFaceFeature_a0defb57d61b8a4c8db8250bffa468f9e}{}\label{classinsight_1_1DistanceFaceFeature_a0defb57d61b8a4c8db8250bffa468f9e}
+
+\item 
+void {\bfseries clear\+Values} ()\hypertarget{classinsight_1_1DistanceFaceFeature_a9bb66e8a4b487354b418cefb11fcf46c}{}\label{classinsight_1_1DistanceFaceFeature_a9bb66e8a4b487354b418cefb11fcf46c}
+
+\item 
+const int {\bfseries get\+Number\+Of\+Reference\+Values} () const \hypertarget{classinsight_1_1DistanceFaceFeature_ae7821d5c05304a0d9a0f2b6a93b7c848}{}\label{classinsight_1_1DistanceFaceFeature_ae7821d5c05304a0d9a0f2b6a93b7c848}
+
+\item 
+virtual double {\bfseries is\+Active} () const \hypertarget{classinsight_1_1DistanceFaceFeature_aa1b48e2dc5396c3327553f6a9e16aa38}{}\label{classinsight_1_1DistanceFaceFeature_aa1b48e2dc5396c3327553f6a9e16aa38}
+
+\item 
+double {\bfseries get\+Previous\+Value} () const \hypertarget{classinsight_1_1DistanceFaceFeature_aa1de8ce81d66d092c69a5c6269af670e}{}\label{classinsight_1_1DistanceFaceFeature_aa1de8ce81d66d092c69a5c6269af670e}
+
+\item 
+short {\bfseries get\+Point1} () const \hypertarget{classinsight_1_1DistanceFaceFeature_ac2df7b12d2d79bb71abaf783fdeb8658}{}\label{classinsight_1_1DistanceFaceFeature_ac2df7b12d2d79bb71abaf783fdeb8658}
+
+\item 
+short {\bfseries get\+Point2} () const \hypertarget{classinsight_1_1DistanceFaceFeature_a46b31e44ab7102415e06cba6ef5d4b32}{}\label{classinsight_1_1DistanceFaceFeature_a46b31e44ab7102415e06cba6ef5d4b32}
+
+\item 
+double {\bfseries get\+Reference\+Mean} () const \hypertarget{classinsight_1_1DistanceFaceFeature_aae7ac3de3b30b35476923a7cfc9f3b77}{}\label{classinsight_1_1DistanceFaceFeature_aae7ac3de3b30b35476923a7cfc9f3b77}
+
+\item 
+double {\bfseries get\+Reference\+Std\+Dev} () const \hypertarget{classinsight_1_1DistanceFaceFeature_a0a3afa67b422e636f4651c4e88be8480}{}\label{classinsight_1_1DistanceFaceFeature_a0a3afa67b422e636f4651c4e88be8480}
+
+\item 
+double {\bfseries get\+Last\+Value} () const \hypertarget{classinsight_1_1DistanceFaceFeature_a8160d8850d49e258a78d634adbceb21b}{}\label{classinsight_1_1DistanceFaceFeature_a8160d8850d49e258a78d634adbceb21b}
+
+\item 
+bool {\bfseries is\+Calibrated} () const \hypertarget{classinsight_1_1DistanceFaceFeature_afe7f617527f31944a4f7550c8d64229d}{}\label{classinsight_1_1DistanceFaceFeature_afe7f617527f31944a4f7550c8d64229d}
+
+\item 
+void {\bfseries set\+Calibrated} (bool calibrated)\hypertarget{classinsight_1_1DistanceFaceFeature_a3c579d899155522a042c0cecc7f9e244}{}\label{classinsight_1_1DistanceFaceFeature_a3c579d899155522a042c0cecc7f9e244}
+
+\item 
+const std\+::vector$<$ short $>$ \& {\bfseries get\+Segment1} () const \hypertarget{classinsight_1_1DistanceFaceFeature_ac49f0fa91070070141c8930bc0c9d736}{}\label{classinsight_1_1DistanceFaceFeature_ac49f0fa91070070141c8930bc0c9d736}
+
+\item 
+void {\bfseries set\+Segment1} (const std\+::vector$<$ short $>$ \&segment1)\hypertarget{classinsight_1_1DistanceFaceFeature_a85dc6acf1f6e17b07bff80213fc1509a}{}\label{classinsight_1_1DistanceFaceFeature_a85dc6acf1f6e17b07bff80213fc1509a}
+
+\item 
+const std\+::vector$<$ short $>$ \& {\bfseries get\+Segment2} () const \hypertarget{classinsight_1_1DistanceFaceFeature_a7f4795a78b26d26954af803b8aa2edf6}{}\label{classinsight_1_1DistanceFaceFeature_a7f4795a78b26d26954af803b8aa2edf6}
+
+\item 
+void {\bfseries set\+Segment2} (const std\+::vector$<$ short $>$ \&segment2)\hypertarget{classinsight_1_1DistanceFaceFeature_a5f8a41d517649e5a8d97a766229e0bad}{}\label{classinsight_1_1DistanceFaceFeature_a5f8a41d517649e5a8d97a766229e0bad}
+
+\item 
+double {\bfseries get\+Threshold} () const \hypertarget{classinsight_1_1DistanceFaceFeature_ab04e9ffaf70117eade948fd7f8dfae78}{}\label{classinsight_1_1DistanceFaceFeature_ab04e9ffaf70117eade948fd7f8dfae78}
+
+\item 
+void {\bfseries set\+Threshold} (double threshold)\hypertarget{classinsight_1_1DistanceFaceFeature_a761e09fd2830020711a6d18f0e74b28d}{}\label{classinsight_1_1DistanceFaceFeature_a761e09fd2830020711a6d18f0e74b28d}
+
+\item 
+Type {\bfseries get\+Type} () const \hypertarget{classinsight_1_1DistanceFaceFeature_ac92e2f7c9c4a4ef232fcc7902aa73f86}{}\label{classinsight_1_1DistanceFaceFeature_ac92e2f7c9c4a4ef232fcc7902aa73f86}
+
+\item 
+void {\bfseries set\+Type} (Type type)\hypertarget{classinsight_1_1DistanceFaceFeature_a3323c04f4af88b7715c703bd92ff4ad0}{}\label{classinsight_1_1DistanceFaceFeature_a3323c04f4af88b7715c703bd92ff4ad0}
+
+\item 
+long {\bfseries get\+Stats\+Buffer\+Length} () const \hypertarget{classinsight_1_1DistanceFaceFeature_a8304c5c616850fd913455382bfab1fb6}{}\label{classinsight_1_1DistanceFaceFeature_a8304c5c616850fd913455382bfab1fb6}
+
+\item 
+void {\bfseries set\+Stats\+Buffer\+Length} (unsigned long stats\+Buffer\+Length)\hypertarget{classinsight_1_1DistanceFaceFeature_a20420d72f7098a53844f731724b4db20}{}\label{classinsight_1_1DistanceFaceFeature_a20420d72f7098a53844f731724b4db20}
+
+\item 
+Mode {\bfseries get\+Mode} () const \hypertarget{classinsight_1_1DistanceFaceFeature_afdb08aff9b4aca48ff23bd9d262c715b}{}\label{classinsight_1_1DistanceFaceFeature_afdb08aff9b4aca48ff23bd9d262c715b}
+
+\item 
+void {\bfseries set\+Mode} (Mode mode)\hypertarget{classinsight_1_1DistanceFaceFeature_a2529781df5ca1a424312c29b8e6483b8}{}\label{classinsight_1_1DistanceFaceFeature_a2529781df5ca1a424312c29b8e6483b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH} = 25\hypertarget{classinsight_1_1DistanceFaceFeature_a97e3033abf485d3868f09d085f724c20}{}\label{classinsight_1_1DistanceFaceFeature_a97e3033abf485d3868f09d085f724c20}
+
+\item 
+static const int {\bfseries D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH} = 1\hypertarget{classinsight_1_1DistanceFaceFeature_a63b56e596e01d4c19c97c681051a5798}{}\label{classinsight_1_1DistanceFaceFeature_a63b56e596e01d4c19c97c681051a5798}
+
+\item 
+static const double {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 1.\+5f\hypertarget{classinsight_1_1DistanceFaceFeature_af0dfff888ce3f5abd0bf8f2398b203c9}{}\label{classinsight_1_1DistanceFaceFeature_af0dfff888ce3f5abd0bf8f2398b203c9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: Some general documentation for class \hyperlink{classinsight_1_1DistanceFaceFeature}{Distance\+Face\+Feature} ... 

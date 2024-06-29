@@ -1,0 +1,2 @@
+/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir

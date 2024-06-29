@@ -1,0 +1,17 @@
+{
+  "buildFiles": [
+    "/home/jseba/Workspace/norna/Facetomood/opencv/CMakeLists.txt",
+    "/home/jseba/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/jseba/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/OpenCVConfig-version.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/OpenCVConfig.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-armeabi-v7a/OpenCVConfig.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-armeabi-v7a/OpenCVModules.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-armeabi-v7a/OpenCVModules-release.cmake"
+  ],
+  "cleanCommands": [
+    "/home/jseba/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/jseba/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {}
+}

@@ -1,0 +1,69 @@
+\hypertarget{classinsight_1_1Insight}{}\section{insight\+:\+:Insight Class Reference}
+\label{classinsight_1_1Insight}\index{insight\+::\+Insight@{insight\+::\+Insight}}
+
+
+{\ttfamily \#include $<$insight.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinsight_1_1Insight_ae30c4167f13a77370aa63f108419295a}{Insight} (const char $\ast$data\+Dir=\char`\"{}../data/\char`\"{})
+\begin{DoxyCompactList}\small\item\em Instantiate the S\+DK. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classinsight_1_1Insight_aa27588fb9962e7c228a93637ee106978}{get\+Version} () const \hypertarget{classinsight_1_1Insight_aa27588fb9962e7c228a93637ee106978}{}\label{classinsight_1_1Insight_aa27588fb9962e7c228a93637ee106978}
+
+\begin{DoxyCompactList}\small\item\em Returns de current version number of the S\+DK. \end{DoxyCompactList}\item 
+bool \hyperlink{classinsight_1_1Insight_af6aaa16c4eae044bcc104ec1ae321225}{init} (cv\+::\+Mat in\+Image)\hypertarget{classinsight_1_1Insight_af6aaa16c4eae044bcc104ec1ae321225}{}\label{classinsight_1_1Insight_af6aaa16c4eae044bcc104ec1ae321225}
+
+\begin{DoxyCompactList}\small\item\em Initializes S\+DK. Must be called once before anything else. \end{DoxyCompactList}\item 
+bool \hyperlink{classinsight_1_1Insight_a5774b1b17b29d1b23186ea383d771b7c}{process} (cv\+::\+Mat in\+Image)\hypertarget{classinsight_1_1Insight_a5774b1b17b29d1b23186ea383d771b7c}{}\label{classinsight_1_1Insight_a5774b1b17b29d1b23186ea383d771b7c}
+
+\begin{DoxyCompactList}\small\item\em Processes a frame. On success true is returned. If true \hyperlink{classinsight_1_1Insight_a48f4996b01968c94e8aa34bf2fadf946}{Insight\+::get\+Person()} object is valid. \end{DoxyCompactList}\item 
+const \hyperlink{classinsight_1_1Person}{Person} \& \hyperlink{classinsight_1_1Insight_a48f4996b01968c94e8aa34bf2fadf946}{get\+Person} () const \hypertarget{classinsight_1_1Insight_a48f4996b01968c94e8aa34bf2fadf946}{}\label{classinsight_1_1Insight_a48f4996b01968c94e8aa34bf2fadf946}
+
+\begin{DoxyCompactList}\small\item\em Retrieves person being processed. \end{DoxyCompactList}\item 
+void \hyperlink{classinsight_1_1Insight_aba366851a69304955e3762d3f8037196}{reset\+Tracker} ()\hypertarget{classinsight_1_1Insight_aba366851a69304955e3762d3f8037196}{}\label{classinsight_1_1Insight_aba366851a69304955e3762d3f8037196}
+
+\begin{DoxyCompactList}\small\item\em Resets tracker state. Point tracker and AU detector are reinitialized. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classinsight_1_1ActionUnit}{Action\+Unit} $>$ \& \hyperlink{classinsight_1_1Insight_a080a9f073e74ff908b9c80a57c4a0f21}{get\+Action\+Units} () const \hypertarget{classinsight_1_1Insight_a080a9f073e74ff908b9c80a57c4a0f21}{}\label{classinsight_1_1Insight_a080a9f073e74ff908b9c80a57c4a0f21}
+
+\begin{DoxyCompactList}\small\item\em Get list of Action Units being tracked. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classinsight_1_1MoodLevel}{Mood\+Level} $>$ \& \hyperlink{classinsight_1_1Insight_afec9b93c9e3a34e7f88a2364486d0037}{get\+Mood\+Levels} () const \hypertarget{classinsight_1_1Insight_afec9b93c9e3a34e7f88a2364486d0037}{}\label{classinsight_1_1Insight_afec9b93c9e3a34e7f88a2364486d0037}
+
+\begin{DoxyCompactList}\small\item\em Get list of defined moods levels. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classinsight_1_1Mood}{Mood} $>$ \& \hyperlink{classinsight_1_1Insight_a97495fcfb96b05f9410c2f976d6d8005}{get\+Moods} () const \hypertarget{classinsight_1_1Insight_a97495fcfb96b05f9410c2f976d6d8005}{}\label{classinsight_1_1Insight_a97495fcfb96b05f9410c2f976d6d8005}
+
+\begin{DoxyCompactList}\small\item\em Get list of moods being tracked. \end{DoxyCompactList}\item 
+bool \hyperlink{classinsight_1_1Insight_a7172711da97520c03e54ae2dadf5d7ea}{is\+Calibrated} () const \hypertarget{classinsight_1_1Insight_a7172711da97520c03e54ae2dadf5d7ea}{}\label{classinsight_1_1Insight_a7172711da97520c03e54ae2dadf5d7ea}
+
+\begin{DoxyCompactList}\small\item\em Returns calibration status of internal detectors. \end{DoxyCompactList}\item 
+const cv\+::\+Mat \& {\bfseries get\+Connections} () const \hypertarget{classinsight_1_1Insight_ab767ab20f97698d90c45ce47354ebc6c}{}\label{classinsight_1_1Insight_ab767ab20f97698d90c45ce47354ebc6c}
+
+\item 
+const cv\+::\+Mat \& {\bfseries get\+Triangulations} () const \hypertarget{classinsight_1_1Insight_a0b6b5eb06211cb81224f43c6faff6f38}{}\label{classinsight_1_1Insight_a0b6b5eb06211cb81224f43c6faff6f38}
+
+\item 
+void {\bfseries set\+Option} (std\+::string key, boost\+::variant$<$ bool, int, double $>$ value)\hypertarget{classinsight_1_1Insight_a63e3ed196d718aa40cd3f791d1d7ac92}{}\label{classinsight_1_1Insight_a63e3ed196d718aa40cd3f791d1d7ac92}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: Some general documentation for class \hyperlink{classinsight_1_1Insight}{Insight} ... 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{insight\+::\+Insight@{insight\+::\+Insight}!Insight@{Insight}}
+\index{Insight@{Insight}!insight\+::\+Insight@{insight\+::\+Insight}}
+\subsubsection[{\texorpdfstring{Insight(const char $\ast$data\+Dir=""../data/"")}{Insight(const char *dataDir="../data/")}}]{\setlength{\rightskip}{0pt plus 5cm}insight\+::\+Insight\+::\+Insight (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data\+Dir = {\ttfamily \char`\"{}../data/\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classinsight_1_1Insight_ae30c4167f13a77370aa63f108419295a}{}\label{classinsight_1_1Insight_ae30c4167f13a77370aa63f108419295a}
+
+
+Instantiate the S\+DK. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data\+Dir} & Path to the directory containing S\+DK resource files. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,26 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/home/jseba/Workspace/norna/Facetomood/opencv/CMakeLists.txt",
+    "/home/jseba/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/jseba/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/OpenCVConfig-version.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/OpenCVConfig.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-x86_64/OpenCVConfig.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-x86_64/OpenCVModules.cmake",
+    "/home/jseba/Workspace/norna/Facetomood/opencv/src/sdk/native/jni/abi-x86_64/OpenCVModules-release.cmake"
+  ],
+  "cleanCommands": [
+    "/home/jseba/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/home/jseba/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/jseba/Workspace/norna/Facetomood/opencv/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {},
+  "toolchains": {
+    "1251477120": {
+      "cCompilerExecutable": "/home/jseba/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+      "cppCompilerExecutable": "/home/jseba/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}
